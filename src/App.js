@@ -1,9 +1,10 @@
 import './App.css';
+import Navbar from './Sheard/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-<button className="btn btn-secondary">Button</button>
+      <Navbar/>
     </div>
   );
 }
