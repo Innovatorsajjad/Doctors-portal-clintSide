@@ -1,13 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
     const menuItems = <>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Appointment</a></li>
-        <li><a>Reviews</a></li>
-        <li><a>Contact Us</a></li>
-        <li><a>Login</a></li>
+        <li><Link to = "/">Home</Link></li>
+        <li><Link to = "/about">About</Link></li>
+        <li><Link to = "/appointment">Appointment</Link></li>
+        <li><Link to = "/reviews">Reviews</Link></li>
+        <li><Link to = "/contactus">Contact Us</Link></li>
+        <li><Link to = "/login">Login</Link></li>
     </>
     return (
         <div>
@@ -23,13 +24,10 @@ const Navbar = () => {
                     </div>
                     <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {menuItems}
                     </ul>
-                </div>
-                <div className="navbar-end">
-                    <a className="btn">Get started</a>
                 </div>
             </div>
         </div>
