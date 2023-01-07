@@ -7,9 +7,9 @@ const Appointment = () => {
     return (
         <section style={{
             background:`url(${appointment})`
-        }} className='flex rounded-sm p-7'>
+        }} className='flex rounded-sm '>
             <div className="flex-1 hidden lg:block">
-                <img className='w-2/4 mt-[-100px]' src={doctor} alt="" />
+                <img className='w-2/3 mt-[-150px]' src={doctor} alt="" />
             </div>
             <div className="flex-1 justify-center my-auto">
                 <h4 className='text-3xl text-primary font-bold my-3'>Appointment !</h4>
